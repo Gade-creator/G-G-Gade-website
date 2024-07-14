@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .navigation {
+            margin-bottom: 20px;
+        }
+
+            .navigation a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+            .checkbox-group label {
+                display: flex;
+                align-items: center;
+            }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .prev-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="ex_lesson1a.html">Back to Home</a>
+        </div>
+
+        <div class="image-container">
+            <img src="images/photo_2024-07-11_21-22-00.jpg" alt="Gadisa Gutema" />
+        </div>
+
+        <form action="" method="get" id="order-form">
+            <div class="form-group">
+                <label for="order-name">Name</label>
+                <input type="text" name="order-name" id="order-name" required autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="order-email">Email address</label>
+                <input type="email" name="order-email" id="order-email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="order-address">Address</label>
+                <input type="text" name="order-address" id="order-address" required />
+            </div>
+
+            <div class="form-group">
+                <label for="order-state">State</label>
+                <select name="order-state" id="order-state" required>
+                    <option value="Koya">Koya</option>
+                    <option value="Tulu-Dimtu">Tulu-Dimtu</option>
+                    <option value="Bola">Bola</option>
+                    <option value="4-kilo">4-kilo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="order-phone">Phone</label>
+                <input type="tel" name="order-phone" id="order-phone" required />
+            </div>
+
+            <div class="form-group">
+                <label>What color sample should we send you?</label>
+                <div class="checkbox-group">
+                    <label for="order-white">
+                        <input type="checkbox" name="order-white" id="order-white" /> White
+                    </label>
+                    <label for="order-gray">
+                        <input type="checkbox" name="order-gray" id="order-gray" /> Gray
+                    </label>
+                    <label for="order-burgundy">
+                        <input type="checkbox" name="order-burgundy" id="order-burgundy" /> Burgundy
+                    </label>
+                    <label for="order-yellow">
+                        <input type="checkbox" name="order-yellow" id="order-yellow" /> Yellow
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="order-number-item">Number of items?</label>
+                <input type="number" name="order-number-item" id="order-number-item" required />
+            </div>
+
+            <div class="form-group">
+                <label for="order-comment">Comment</label>
+                <textarea name="order-comment" id="order-comment" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Please Order</button>
+        </form>
+
+        <div class="prev-link">
+            <a href="ex_lesson1a.html">Previous</a>
+        </div>
+    </div>
+</body>
+</html>
